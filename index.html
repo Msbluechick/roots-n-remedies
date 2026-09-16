@@ -4,40 +4,42 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Roots N Remedies LLC</title>
-<meta name="description" content="Roots N Remedies LLC — a family-run Mississippi company building software for people handling hard things themselves.">
+<meta name="description" content="Roots N Remedies LLC — a small Mississippi software company building tools for people handling hard things themselves.">
 <style>
   :root{
-    --ink:#161219; --ink-2:#4a4350; --line:#e4dfe6; --bg:#fbf9fb; --card:#ffffff;
+    --ink:#161219; --ink-2:#4a4350; --ink-3:#6b6473; --line:#e4dfe6; --bg:#fbf9fb; --card:#ffffff;
     --gold:#C9A227; --purple:#8900FF; --pink:#F6479A; --green:#19C99B; --blue:#1E4FD8;
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
-       font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;}
-  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
   header{padding:54px 0 10px}
   .name{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);font-weight:700}
   h1{font-size:clamp(30px,6vw,46px);line-height:1.12;margin:14px 0 10px;font-weight:800;letter-spacing:-.01em}
   .arc{font-size:clamp(17px,3.4vw,21px);color:var(--ink-2);margin:0 0 6px}
   .stripe{height:5px;border-radius:3px;margin:22px 0 30px;
           background:linear-gradient(90deg,var(--green),var(--gold),var(--pink),var(--purple),#00C2FF,#F26E3A)}
-  .lede{font-size:18px;color:var(--ink-2);max-width:62ch}
+  .lede{font-size:18px;color:var(--ink-2);max-width:64ch}
   h2{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);
-     margin:44px 0 14px;font-weight:800}
-  .grid{display:grid;gap:14px}
-  @media(min-width:680px){.grid{grid-template-columns:1fr 1fr}}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px}
-  .card h3{margin:0 0 4px;font-size:19px}
-  .card p{margin:0 0 12px;color:var(--ink-2);font-size:15px}
+     margin:48px 0 6px;font-weight:800}
+  .h2note{color:var(--ink-3);font-size:15px;margin:0 0 18px;max-width:62ch}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+        padding:20px 20px 18px;margin-bottom:14px}
+  .card h3{margin:0 0 2px;font-size:21px;letter-spacing:-.01em}
+  .card .what{margin:0 0 10px;color:var(--ink-3);font-size:14px;font-weight:600}
+  .card p{margin:0 0 10px;color:var(--ink-2);font-size:15.5px}
+  .card p.not{color:var(--ink-3);font-size:14.5px;margin-bottom:12px}
   .tag{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
        padding:3px 9px;border-radius:999px;margin-bottom:9px}
   .live{background:#dcf5ec;color:#0b6b52}
   .store{background:#e7f0ff;color:#12429c}
   .soon{background:#f1ecf8;color:#4b2d7a}
   a{color:var(--purple)}
-  .card a{font-weight:700;text-decoration:none;border-bottom:2px solid #e9d9ff}
-  .card a:hover{border-bottom-color:var(--purple)}
+  .go{font-weight:700;text-decoration:none;border-bottom:2px solid #e9d9ff}
+  .go:hover{border-bottom-color:var(--purple)}
   ul.plain{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-  @media(min-width:680px){ul.plain{grid-template-columns:1fr 1fr 1fr}}
+  @media(min-width:700px){ul.plain{grid-template-columns:1fr 1fr}}
   ul.plain li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
   ul.plain b{display:block;margin-bottom:3px}
   ul.plain span{color:var(--ink-2);font-size:15px}
@@ -53,62 +55,84 @@
   <h1>Tools for people handling hard things themselves.</h1>
   <p class="arc"><b>Fight back. Build a village. Make it home.</b></p>
   <div class="stripe"></div>
-  <p class="lede">Roots N Remedies is a small, family-run company. We build software the way you
-  would want a neighbor to look out for your street: carefully, in plain words, with the
-  safety of the person using it treated as the whole point rather than an afterthought.</p>
+  <p class="lede">Roots N Remedies is a small, independent software company in Mississippi.
+  Everything here got built because somebody needed it and nobody had made it yet — so it
+  gets made the way it should have existed in the first place: in plain words, carefully,
+  with the safety of the person using it treated as the whole point rather than an afterthought.</p>
 </header>
 
 <h2>What we build</h2>
-<div class="grid">
+<p class="h2note">Five pieces of software. What each one is, who it is for, and what it will not do.</p>
 
-  <div class="card">
-    <span class="tag live">Live</span>
-    <h3>My Damn Self</h3>
-    <p>Organize your own evidence: screenshots, messages, photos, recordings and documents,
-    in date order and numbered, into one packet for court. Your files are read on your own
-    device and never leave it.</p>
-    <a href="https://mydamnself.com">mydamnself.com</a>
-  </div>
+<div class="card">
+  <span class="tag live">Live</span>
+  <h3>My Damn Self</h3>
+  <p class="what">Your evidence, organized into one packet you can hand to somebody.</p>
+  <p>You already have the proof — it is just scattered across two years of screenshots, text
+  threads, photos, voice memos, letters and PDFs. My Damn Self takes all of it and gives back
+  one packet: everything in date order, every item numbered, the text inside pictures read and
+  searchable, recordings transcribed, and tables that lay out what happened, when, and which
+  pieces back each other up. For a lawyer, an officer, a caseworker, or a judge.</p>
+  <p class="not">Your files are read on your own device. They are not uploaded, and nobody here
+  ever sees them. It organizes and counts — it does not decide what anything means.</p>
+  <a class="go" href="https://mydamnself.com">mydamnself.com</a>
+</div>
 
-  <div class="card">
-    <span class="tag live">Live</span>
-    <h3>Due Process Audit</h3>
-    <p>Sets a published rule beside a court record and does the arithmetic: what the rule
-    required, what the record shows, and where the two do not meet. It reports. It does not rule.</p>
-    <a href="https://dueprocessaudit.com">dueprocessaudit.com</a>
-  </div>
+<div class="card">
+  <span class="tag live">Live</span>
+  <h3>Due Process Audit</h3>
+  <p class="what">The rule, the record, and the arithmetic between them.</p>
+  <p>Put a published rule — a statute, a court rule, an agency policy — beside what a record
+  actually shows, and Due Process Audit does the math nobody has time to do: what the rule
+  required, what date it was due, what the record says happened, and where the two do not meet.
+  It shows its work and cites the rule it used, so anybody reading it can check it.</p>
+  <p class="not">It reports. It does not rule, it does not argue, and it is not legal advice.</p>
+  <a class="go" href="https://dueprocessaudit.com">dueprocessaudit.com</a>
+</div>
 
-  <div class="card">
-    <span class="tag store">On the App Store</span>
-    <h3>Roots to Roux</h3>
-    <p>Know before you forage. Plant identification for the yard and the woods, with the
-    safety questions asked first and the look-alikes shown beside the match.</p>
-    <a href="https://apps.apple.com/us/app/roots-to-roux/id6800447682">Roots to Roux on the App Store</a>
-  </div>
+<div class="card">
+  <span class="tag store">On the App Store</span>
+  <h3>Roots to Roux</h3>
+  <p class="what">Know before you forage.</p>
+  <p>Point your camera at a plant and get an identification — with the safety questions asked
+  first and the dangerous look-alikes shown right beside the match, not buried three screens
+  down. Built for the yard, the ditch and the woods behind the house, around what actually
+  grows where you are, along with what it has traditionally been used for.</p>
+  <p class="not">It never tells you something is safe to eat. It tells you what it looks like,
+  what it could be confused with, and what to check.</p>
+  <a class="go" href="https://apps.apple.com/us/app/roots-to-roux/id6800447682">Roots to Roux on the App Store</a>
+</div>
 
-  <div class="card">
-    <span class="tag soon">In testing</span>
-    <h3>ProCierge</h3>
-    <p>Your real town on your phone: local businesses, events, services and neighbors who are
-    verified people rather than anonymous accounts.</p>
-    <a href="https://localsprocierge.com">localsprocierge.com</a>
-  </div>
+<div class="card">
+  <span class="tag soon">Building</span>
+  <h3>ProCierge</h3>
+  <p class="what">Your actual town, on your phone.</p>
+  <p>The businesses, the events, the services, the help that exists three streets over — on a
+  map of the place you really live, kept by verified people instead of anonymous accounts.
+  Made for the towns that never get their own app and are told to make do with a Facebook
+  group.</p>
+  <p class="not">In testing now. It goes out when it is right, not when it is ready enough.</p>
+  <a class="go" href="https://localsprocierge.com">localsprocierge.com</a>
+</div>
 
-  <div class="card">
-    <span class="tag live">Live</span>
-    <h3>My Damn Mirror</h3>
-    <p>Your own record, read back to you. A place to look at your own patterns honestly —
-    for you, not for a courtroom.</p>
-    <a href="https://mydamnmirror.com">mydamnmirror.com</a>
-  </div>
-
+<div class="card">
+  <span class="tag live">Live</span>
+  <h3>My Damn Mirror</h3>
+  <p class="what">Your own record, read back to you.</p>
+  <p>The same careful reading the other tools do, turned around and pointed at your own
+  patterns — what you keep saying, what you keep walking back into, what changed and when.
+  Quiet, private, and yours.</p>
+  <p class="not">This one is not evidence. It does not build packets, it does not go to court,
+  and nothing in it is for anybody but you.</p>
+  <a class="go" href="https://mydamnmirror.com">mydamnmirror.com</a>
 </div>
 
 <h2>How we work</h2>
 <ul class="plain">
-  <li><b>It stays on your device</b><span>Evidence is read where you are. We are not holding your case on a server.</span></li>
-  <li><b>Plain words</b><span>What a thing does, what it does not do, and what it costs, said once and said straight.</span></li>
+  <li><b>It stays on your device</b><span>Evidence is read where you are. We are not holding your case on a server, and we are not looking at your family.</span></li>
+  <li><b>Plain words</b><span>What a thing does, what it does not do, and what it costs — said once and said straight.</span></li>
   <li><b>Nothing is decided for you</b><span>The tools gather, count and lay out. You decide what to file. The court decides what it means.</span></li>
+  <li><b>Built by someone who needed it</b><span>Every one of these started as a real problem in a real week, not a product meeting.</span></li>
 </ul>
 
 <footer>
