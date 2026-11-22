@@ -43,6 +43,15 @@
   a{color:var(--purple)}
   .go{font-weight:700;text-decoration:none;border-bottom:2px solid #e9d9ff}
   .go:hover{border-bottom-color:var(--purple)}
+  /* App Store QR (2026-11-22). Desktop only; image made with qrcode (MIT). */
+  .card-qr{display:flex;align-items:center;gap:16px;margin:4px 0 12px}
+  .card-qr figure{margin:0;flex:none;text-align:center}
+  .card-qr img{display:block;width:132px;height:132px;background:#fff;padding:6px;border-radius:10px;border:1px solid var(--line)}
+  .card-qr figcaption{margin-top:5px;font-size:12.5px;color:var(--ink-3);max-width:132px}
+  .card-qr-links{display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+  .store-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:7px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .store-badge svg{display:block}
+  @media(max-width:560px){.card-qr{display:none}}
   ul.plain{list-style:none;padding:0;margin:0;display:grid;gap:12px}
   @media(min-width:700px){ul.plain{grid-template-columns:1fr 1fr}}
   ul.plain li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
@@ -108,6 +117,18 @@
   <a class="go" href="https://rootstoroux.com">rootstoroux.com</a>
   &nbsp;·&nbsp;
   <a class="go" href="https://apps.apple.com/us/app/roots-to-roux/id6800447682">App Store</a>
+  <!-- App Store QR (2026-11-22). Listing opened 2026-11-22: HTTP 200, "Roots to Roux App - App Store".
+       The QR decodes to exactly that address. Image made with qrcode (MIT), npmjs.com/package/qrcode. -->
+  <div class="card-qr">
+    <figure>
+      <img src="app-store-qr.png" width="132" height="132" alt="QR code that opens the Roots to Roux listing on the App Store">
+      <figcaption>Scan to get the app on iPhone</figcaption>
+    </figure>
+    <div class="card-qr-links">
+      <span class="store-badge" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>App Store</span>
+      <a class="go" href="https://apps.apple.com/us/app/roots-to-roux/id6800447682">Open the App Store listing</a>
+    </div>
+  </div>
 </div>
 
 <div class="card">
